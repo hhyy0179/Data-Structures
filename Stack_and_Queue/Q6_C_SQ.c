@@ -111,7 +111,12 @@ int main()
 
 void removeUntil(Stack *s, int value)
 {
-/* add your code here */
+	while(1)
+	{
+		int top = s->ll.head->item;
+		if (top == value) break;
+		else pop(s);
+	}
 }
 
 //////////////////////////////////////////////////////////////////////////////////
